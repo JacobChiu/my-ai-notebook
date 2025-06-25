@@ -1,0 +1,12 @@
+{
+  // 用终端执行代码，并先保存所有文件
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+
+// 覆盖 C++ 文件的编译+执行命令
+"code-runner.executorMap": {
+  "cpp": "cd $dir && g++ -std=c++17 \"$fileName\" -o \"$fileNameWithoutExt.exe\" && ./$fileNameWithoutExt.exe"
+},
+"code-runner.showExecutionMessage": false
+
+}
