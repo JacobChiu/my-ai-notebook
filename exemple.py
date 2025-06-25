@@ -12,3 +12,7 @@ import random
 random_nums = [random.uniform(1, 100) for _ in range(10)]   
 print(f"隨機數字列表: {random_nums}")
 print(f"隨機數字的平均值為: {average(random_nums)}")   
+#新增求和函式
+def sum_of_list(nums: list[float]) -> float:
+    return sum(nums)
+print(f"列表的總和為: {sum_of_list([1, 2, 3, 4, 5])}")
